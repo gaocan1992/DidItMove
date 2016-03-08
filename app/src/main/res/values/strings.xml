@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DidItMove</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="clear_button_name">Clear</string>
+    <string name="exit_button_name">Exit</string>
+
+    <string name="my_service_started">The detection service has started.</string>
+    <string name="notification_title">Detection service</string>
+    <string name="my_service_running">The detection service is running.</string>
+</resources>

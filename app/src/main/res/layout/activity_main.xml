@@ -1,0 +1,66 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/background_material_dark"
+    android:id="@+id/relative_layout">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        style="@style/count_text"
+        android:id="@+id/count_textview" />
+
+    <TextView
+        android:layout_below="@+id/count_textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp"
+        style="@style/textview_text"
+        android:id="@+id/textview" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_button_name"
+            android:layout_gravity="center"
+            android:id="@+id/clear_button"
+            android:background="@drawable/red_button"
+            style="@style/button_text"
+            android:onClick="clickClear"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="10dp">
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_button_name"
+            android:layout_gravity="center"
+            android:id="@+id/exit_button"
+            android:background="@drawable/red_button"
+            style="@style/button_text"
+            android:onClick="clickExit"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
